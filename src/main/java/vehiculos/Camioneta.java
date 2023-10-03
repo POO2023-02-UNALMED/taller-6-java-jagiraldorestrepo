@@ -1,14 +1,14 @@
 package vehiculos;
 
-public class Camioneta extends Vehiculo {
-	private boolean volco;
+public class Camioneta extends Vehiculo{
+	private Boolean volco;
 	private static int camionetas;
-	
+
 	public Camioneta(String placa, int puertas, String nombre, int precio, int peso,Fabricante fabricante,Boolean volco) {
 		super(placa, puertas,90, nombre, precio, peso, "4X4", fabricante);
 		this.volco=volco;
 	}
-	
+
 	public Boolean getVolco() {
 		return volco;
 	}
@@ -21,8 +21,4 @@ public class Camioneta extends Vehiculo {
 		return camionetas;
 	}
 	
-	
-	
-	
-
 }

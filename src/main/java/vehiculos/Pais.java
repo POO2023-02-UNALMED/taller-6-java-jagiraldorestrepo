@@ -1,16 +1,13 @@
 package vehiculos;
 
 public class Pais {
-	
-	
 	private String nombre;
-	
-	
+
 	public Pais(String nombre) {
-		//super();
+		super();
 		this.nombre = nombre;
 	}
-	
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -21,7 +18,4 @@ public class Pais {
 	public static Pais paisMasVendedor() {
 		return Fabricante.fabricaMayorVentas().getPais();
 	}
-	
-	
-
 }

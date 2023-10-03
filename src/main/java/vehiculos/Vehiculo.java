@@ -1,8 +1,7 @@
 package vehiculos;
 
 public class Vehiculo {
-
-	protected String placa;
+	protected String Placa;
 	protected int puertas;
 	protected int velocidadMaxima;
 	protected String nombre;
@@ -11,30 +10,27 @@ public class Vehiculo {
 	protected String traccion;
 	protected Fabricante fabricante;
 	protected static int CantidadVehiculos;
-	
-	public Vehiculo (String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante){
-		
-		this.placa = placa;
-		this.puertas= puertas;
+
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,
+			String traccion, Fabricante fabricante) {
+		Placa = placa;
+		this.puertas = puertas;
 		this.velocidadMaxima = velocidadMaxima;
-		this.nombre=nombre;
-		this.precio=precio;
-		this.peso=peso;
-		this.traccion=traccion;
-		this.fabricante=fabricante;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.peso = peso;
+		this.traccion = traccion;
+		this.fabricante = fabricante;
 		CantidadVehiculos++;
-		
+		fabricante.cantidad++;
 	}
-	
-	
-	
-	
+
 	public String getPlaca() {
-		return placa;
+		return Placa;
 	}
 
 	public void setPlaca(String placa) {
-		this.placa = placa;
+		Placa = placa;
 	}
 
 	public int getPuertas() {
@@ -100,18 +96,9 @@ public class Vehiculo {
 	public static void setCantidadVehiculos(int cantidadVehiculos) {
 		CantidadVehiculos = cantidadVehiculos;
 	}
-	
 	public String vehiculosPorTipo() {
 		return "Automoviles: " + Automovil.getAutomoviles() +"\n"+"Camionetas: " + Camion.getCamiones() +"\n"+"Camiones: " + Camioneta.getCamionetas();
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
+
