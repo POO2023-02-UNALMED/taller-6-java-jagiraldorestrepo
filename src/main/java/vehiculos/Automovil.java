@@ -2,21 +2,21 @@ package vehiculos;
 
 public class Automovil extends Vehiculo{
 	
-	private int puertas;
+	private int puestos;
 	private static int automoviles;
 
-	public Automovil(String placa, String nombre, double precio, double peso, Fabricante fabricante,int puertas) {
+	public Automovil(String placa, String nombre, double precio, double peso, Fabricante fabricante,int puestos) {
 		super(placa,4, 100, nombre, precio, peso,"FWD", fabricante);
-		this.puertas=puertas;
+		this.puestos=puestos;
 		automoviles++;
 	}
 
-	public int getPuertas() {
+	public int getPestos() {
 		return puertas;
 	}
 
-	public void setPuertas(int puertas) {
-		this.puertas = puertas;
+	public void setPuestos(int puestos) {
+		this.puestos = puestos;
 	}
 
 	public static int getAutomoviles() {
