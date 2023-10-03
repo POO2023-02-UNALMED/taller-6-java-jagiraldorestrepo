@@ -12,7 +12,7 @@ public class Automovil extends Vehiculo{
 	}
 
 	public int getPestos() {
-		return puertas;
+		return puestos;
 	}
 
 	public void setPuestos(int puestos) {
