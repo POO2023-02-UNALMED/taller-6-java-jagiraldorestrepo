@@ -4,15 +4,15 @@ public class Vehiculo {
 
 	protected String placa;
 	protected int puertas;
-	protected double velocidadMaxima;
+	protected int velocidadMaxima;
 	protected String nombre;
-	protected double precio;
-	protected double peso;
+	protected int precio;
+	protected int peso;
 	protected String traccion;
 	protected Fabricante fabricante;
 	protected static int CantidadVehiculos;
 	
-	public Vehiculo (String placa, int puertas, double velocidadMaxima, String nombre, double precio, double peso, String traccion, Fabricante fabricante){
+	public Vehiculo (String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante){
 		
 		this.placa = placa;
 		this.puertas= puertas;
@@ -44,7 +44,7 @@ public class Vehiculo {
 		this.puertas = puertas;
 	}
 
-	public double getVelocidadMaxima() {
+	public int getVelocidadMaxima() {
 		return velocidadMaxima;
 	}
 
@@ -60,7 +60,7 @@ public class Vehiculo {
 		this.nombre = nombre;
 	}
 
-	public double getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
 
@@ -68,7 +68,7 @@ public class Vehiculo {
 		this.precio = precio;
 	}
 
-	public double getPeso() {
+	public int getPeso() {
 		return peso;
 	}
 
