@@ -11,7 +11,7 @@ public class Automovil extends Vehiculo{
 		automoviles++;
 	}
 
-	public int getPestos() {
+	public int getPuestos() {
 		return puestos;
 	}
 
