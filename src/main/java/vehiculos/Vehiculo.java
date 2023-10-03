@@ -16,6 +16,7 @@ public class Vehiculo {
 		
 		this.placa = placa;
 		this.puertas= puertas;
+		this.velocidadMaxima = velocidadMaxima;
 		this.nombre=nombre;
 		this.precio=precio;
 		this.peso=peso;
