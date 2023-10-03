@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Fabricante{
 	
 	private String nombre;
-	private País pais;
+	private Pais pais;
 	int cantidad;
 	
 	public static ArrayList<Fabricante> fabricantes=new ArrayList<>();
@@ -18,11 +18,11 @@ public class Fabricante{
 		this.nombre = nombre;
 	}
 
-	public País getPais() {
+	public Pais getPais() {
 		return pais;
 	}
 
-	public void setPais(País pais) {
+	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
 	

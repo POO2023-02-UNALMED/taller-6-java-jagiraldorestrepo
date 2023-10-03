@@ -1,18 +1,16 @@
 package vehiculos;
 
-public class Automóvil extends Vehículo{
+public class Automovil extends Vehiculo{
 	
-	
-	private int puestos;
+	private int puertas;
 	private static int automoviles;
-	
-	public Automóvil(String placa, String nombre, double precio, double peso, Fabricante fabricante,int puertas) {
+
+	public Automovil(String placa, String nombre, double precio, double peso, Fabricante fabricante,int puertas) {
 		super(placa,4, 100, nombre, precio, peso,"FWD", fabricante);
 		this.puertas=puertas;
 		automoviles++;
 	}
-	
-	
+
 	public int getPuertas() {
 		return puertas;
 	}
@@ -24,10 +22,9 @@ public class Automóvil extends Vehículo{
 	public static int getAutomoviles() {
 		return automoviles;
 	}
+	
+	
+	
+	
+
 }
-	
-	
-	
-	
-	
-	
